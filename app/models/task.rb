@@ -1,5 +1,5 @@
 class Task < ApplicationRecord
-  before_validation :set_nameless_name
+  #before_validation :set_nameless_name
 
   validates :name, presence: true
   validate :validate_name_not_including_comma
